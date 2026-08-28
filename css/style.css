@@ -1,0 +1,351 @@
+/* ==============================
+   STYLE GÉNÉRAL
+   ============================== */
+
+body {
+    margin: 0;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: #0a0a0a;
+    border-bottom: 2px solid #e30613;
+}
+
+
+/* ==============================
+   LOGO
+   ============================== */
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+/* ==============================
+   MENU
+   ============================== */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #e30613;
+}
+
+
+/* ==============================
+   BOUTON INSCRIPTION
+   ============================== */
+
+.btn-inscription {
+    background-color: #e30613;
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-inscription:hover {
+    background-color: white;
+    color: #e30613;
+}
+
+
+/* ==============================
+   HERO
+   ============================== */
+
+.hero {
+    min-height: calc(100vh - 92px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #111;
+}
+
+.hero-content {
+    max-width: 900px;
+    padding: 40px;
+}
+
+.hero-subtitle {
+    color: #e30613;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 0 0 25px 0;
+    font-weight: 900;
+}
+
+.hero-description {
+    font-size: 22px;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #e30613;
+    color: white;
+    text-decoration: none;
+    padding: 16px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-button:hover {
+    background-color: white;
+    color: #e30613;
+}
+
+
+/* ==============================
+   SECTION PRÉSENTATION
+   ============================== */
+
+.about {
+    padding: 120px 20px;
+    background-color: #0a0a0a;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    color: #e30613;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0 0 35px 0;
+}
+
+.about p:not(.section-subtitle) {
+    max-width: 750px;
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.about-button {
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #e30613;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-button:hover {
+    background-color: #e30613;
+}
+
+
+/* ==============================
+   DISCIPLINES
+   ============================== */
+
+.disciplines {
+    padding: 120px 40px;
+    background-color: #111;
+}
+
+.section-header {
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+}
+
+.section-header h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+
+/* ==============================
+   CARTES DISCIPLINES
+   ============================== */
+
+.discipline-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 25px;
+}
+
+.discipline-card {
+    flex: 1;
+    padding: 40px 30px;
+    background-color: #0a0a0a;
+    border-top: 3px solid #e30613;
+}
+
+.discipline-number {
+    color: #e30613;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.discipline-card h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.discipline-card p {
+    color: #bbbbbb;
+    line-height: 1.6;
+    min-height: 80px;
+}
+
+.discipline-card a {
+    display: inline-block;
+    margin-top: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.discipline-card a:hover {
+    color: #e30613;
+}
+
+
+/* ==============================
+   BTT GIRLS
+   ============================== */
+
+.btt-girls {
+    padding: 120px 40px;
+    background-color: #0a0a0a;
+}
+
+.btt-girls-header {
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+}
+
+.btt-girls-header h2 {
+    font-size: 58px;
+    line-height: 1;
+    margin: 0 0 30px 0;
+}
+
+.btt-girls-header > p:last-child {
+    max-width: 750px;
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   IMAGES BTT GIRLS
+   ============================== */
+
+.btt-girls-images {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 25px;
+}
+
+.btt-girls-image {
+    flex: 1;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+
+.btt-girls-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+}
+
+.btt-girls-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.btt-girls-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* ==============================
+   BAS DE SECTION BTT GIRLS
+   ============================== */
+
+.btt-girls-footer {
+    max-width: 1200px;
+    margin: 45px auto 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.btt-girls-footer p {
+    max-width: 650px;
+    color: #cccccc;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
