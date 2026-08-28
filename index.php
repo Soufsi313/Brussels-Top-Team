@@ -204,6 +204,83 @@
 
         </section>
 
+
+        <!-- ==============================
+             NOS VALEURS
+             ============================== -->
+
+        <section class="values">
+
+            <div class="section-header">
+
+                <p class="section-subtitle">NOTRE ÉTAT D'ESPRIT</p>
+
+                <h2>CE QUI NOUS<br>RÉUNIT.</h2>
+
+            </div>
+
+
+            <div class="values-container">
+
+                <article class="value-card">
+
+                    <span class="value-number">01</span>
+
+                    <h3>DÉPASSEMENT</h3>
+
+                    <p>
+                        Repousser ses limites, progresser et sortir
+                        de sa zone de confort à chaque entraînement.
+                    </p>
+
+                </article>
+
+
+                <article class="value-card">
+
+                    <span class="value-number">02</span>
+
+                    <h3>COLLECTIF</h3>
+
+                    <p>
+                        S'entraîner ensemble, progresser ensemble
+                        et créer une véritable cohésion.
+                    </p>
+
+                </article>
+
+
+                <article class="value-card">
+
+                    <span class="value-number">03</span>
+
+                    <h3>DISCIPLINE</h3>
+
+                    <p>
+                        La régularité et l'engagement sont au cœur
+                        de toute progression sportive.
+                    </p>
+
+                </article>
+
+
+                <article class="value-card">
+
+                    <span class="value-number">04</span>
+
+                    <h3>PASSION</h3>
+
+                    <p>
+                        Au-delà de la performance, le sport reste
+                        une aventure humaine et un plaisir partagé.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
     </main>
 
 </body>
