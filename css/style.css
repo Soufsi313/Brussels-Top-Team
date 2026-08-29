@@ -884,29 +884,19 @@ nav a:hover {
    PAGE DISCIPLINES
    ============================== */
 
-
-/* HERO */
-
 .disciplines-hero {
     min-height: 70vh;
-
     display: flex;
-
     align-items: center;
-
     padding: 80px 60px;
-
     background-color: #111;
-
     box-sizing: border-box;
 }
 
 
 .disciplines-hero-content {
     width: 100%;
-
     max-width: 1400px;
-
     margin: 0 auto;
 }
 
@@ -918,42 +908,34 @@ nav a:hover {
 
 .disciplines-hero h1 {
     font-size: 110px;
-
     line-height: 0.85;
-
     margin: 0 0 35px 0;
-
     font-weight: 900;
 }
 
 
 .disciplines-hero-content > p:last-child {
     color: #cccccc;
-
     font-size: 22px;
-
     font-weight: bold;
-
     letter-spacing: 5px;
-
     margin: 0;
 }
 
 
-/* INTRODUCTION */
+/* ==============================
+   INTRO DISCIPLINES
+   ============================== */
 
 .disciplines-intro {
     padding: 140px 60px;
-
     background-color: #0a0a0a;
-
     box-sizing: border-box;
 }
 
 
 .disciplines-intro-content {
     max-width: 1000px;
-
     margin: 0 auto;
 }
 
@@ -965,33 +947,27 @@ nav a:hover {
 
 .disciplines-intro h2 {
     font-size: 65px;
-
     line-height: 0.95;
-
     margin: 0 0 40px 0;
-
     font-weight: 900;
 }
 
 
 .disciplines-intro-content > p:not(.section-subtitle) {
     max-width: 800px;
-
     color: #cccccc;
-
     font-size: 19px;
-
     line-height: 1.75;
-
     margin: 0;
 }
 
 
-/* DISCIPLINES DÉTAIL */
+/* ==============================
+   DÉTAIL DISCIPLINES
+   ============================== */
 
 .discipline-detail {
     padding: 120px 60px;
-
     box-sizing: border-box;
 }
 
@@ -1013,26 +989,18 @@ nav a:hover {
 
 .discipline-detail-number {
     max-width: 1400px;
-
     margin: 0 auto 50px auto;
-
     color: #e30613;
-
     font-size: 18px;
-
     font-weight: bold;
 }
 
 
 .discipline-detail-content {
     max-width: 1400px;
-
     margin: 0 auto;
-
     display: flex;
-
     align-items: center;
-
     gap: 90px;
 }
 
@@ -1049,82 +1017,54 @@ nav a:hover {
 
 .discipline-detail-text h2 {
     font-size: 70px;
-
     line-height: 0.9;
-
     margin: 0 0 40px 0;
-
     font-weight: 900;
 }
 
 
 .discipline-detail-text p:not(.section-subtitle) {
     color: #cccccc;
-
     font-size: 19px;
-
     line-height: 1.75;
-
     margin: 0 0 22px 0;
 }
 
 
-/* PLACEHOLDER IMAGE */
-
 .discipline-placeholder {
     flex: 1;
-
     height: 650px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     background-color: #181818;
-
     border: 1px solid #333;
 }
 
 
 .discipline-placeholder span {
     color: #555;
-
     font-size: 24px;
-
     font-weight: bold;
-
     letter-spacing: 4px;
-
     text-align: center;
-
     line-height: 1.3;
 }
 
 
-/* FUTSAL */
-
 .discipline-futsal-image {
     flex: 1;
-
     height: 650px;
-
     overflow: hidden;
 }
 
 
 .discipline-futsal-image img {
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
-
     object-position: center;
-
     display: block;
-
     transition: transform 0.5s ease;
 }
 
@@ -1134,20 +1074,19 @@ nav a:hover {
 }
 
 
-/* CTA */
+/* ==============================
+   CTA DISCIPLINES
+   ============================== */
 
 .disciplines-cta {
     padding: 140px 60px;
-
     background-color: #0a0a0a;
-
     box-sizing: border-box;
 }
 
 
 .disciplines-cta-content {
     max-width: 1000px;
-
     margin: 0 auto;
 }
 
@@ -1159,6 +1098,224 @@ nav a:hover {
 
 .disciplines-cta h2 {
     font-size: 70px;
+    line-height: 0.9;
+    margin: 0 0 40px 0;
+    font-weight: 900;
+}
+
+
+.disciplines-cta-content > p:not(.section-subtitle) {
+    max-width: 750px;
+    color: #cccccc;
+    font-size: 19px;
+    line-height: 1.75;
+    margin: 0 0 30px 0;
+}
+
+
+/* ==============================
+   PAGE CONTACT
+   ============================== */
+
+
+/* HERO */
+
+.contact-hero {
+    min-height: 65vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 60px;
+
+    background-color: #111;
+
+    box-sizing: border-box;
+}
+
+
+.contact-hero-content {
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+.contact-hero-content .section-subtitle {
+    margin-bottom: 25px;
+}
+
+
+.contact-hero h1 {
+    font-size: 110px;
+
+    line-height: 0.85;
+
+    margin: 0 0 35px 0;
+
+    font-weight: 900;
+}
+
+
+.contact-hero-content > p:last-child {
+    color: #cccccc;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin: 0;
+}
+
+
+/* INFORMATIONS */
+
+.contact-information {
+    padding: 140px 60px;
+
+    background-color: #0a0a0a;
+
+    box-sizing: border-box;
+}
+
+
+.contact-information-content {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 100px;
+
+    align-items: flex-start;
+}
+
+
+.contact-information-intro {
+    flex: 0 0 45%;
+}
+
+
+.contact-information-intro .section-subtitle {
+    margin-bottom: 25px;
+}
+
+
+.contact-information-intro h2 {
+    font-size: 60px;
+
+    line-height: 0.95;
+
+    margin: 0 0 40px 0;
+
+    font-weight: 900;
+}
+
+
+.contact-information-intro p:not(.section-subtitle) {
+    color: #cccccc;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+
+    margin: 0 0 22px 0;
+}
+
+
+.contact-details {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+
+    background-color: #333;
+}
+
+
+.contact-detail {
+    padding: 40px;
+
+    background-color: #111;
+}
+
+
+.contact-detail span {
+    display: block;
+
+    color: #e30613;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+.contact-detail h3 {
+    font-size: 25px;
+
+    margin: 0 0 15px 0;
+}
+
+
+.contact-detail p {
+    color: #bbbbbb;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* FORMULAIRE */
+
+.contact-form-section {
+    padding: 140px 60px;
+
+    background-color: #111;
+
+    box-sizing: border-box;
+}
+
+
+.contact-form-container {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 100px;
+
+    align-items: flex-start;
+}
+
+
+.contact-form-intro {
+    flex: 0 0 40%;
+}
+
+
+.contact-form-intro .section-subtitle {
+    margin-bottom: 25px;
+}
+
+
+.contact-form-intro h2 {
+    font-size: 65px;
 
     line-height: 0.9;
 
@@ -1168,7 +1325,157 @@ nav a:hover {
 }
 
 
-.disciplines-cta-content > p:not(.section-subtitle) {
+.contact-form-intro p:not(.section-subtitle) {
+    color: #cccccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+.contact-form {
+    flex: 1;
+
+    padding: 50px;
+
+    background-color: #0a0a0a;
+
+    border: 1px solid #333;
+
+    box-sizing: border-box;
+}
+
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 16px 18px;
+
+    background-color: #111;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #e30613;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 160px;
+}
+
+
+.form-group select {
+    cursor: pointer;
+}
+
+
+.contact-submit {
+    width: 100%;
+
+    padding: 17px 25px;
+
+    background-color: #e30613;
+
+    color: white;
+
+    border: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+
+.contact-submit:hover {
+    background-color: white;
+
+    color: #e30613;
+}
+
+
+/* CTA CONTACT */
+
+.contact-cta {
+    padding: 140px 60px;
+
+    background-color: #0a0a0a;
+
+    box-sizing: border-box;
+}
+
+
+.contact-cta-content {
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+.contact-cta-content .section-subtitle {
+    margin-bottom: 25px;
+}
+
+
+.contact-cta h2 {
+    font-size: 70px;
+
+    line-height: 0.9;
+
+    margin: 0 0 40px 0;
+
+    font-weight: 900;
+}
+
+
+.contact-cta-content > p:not(.section-subtitle) {
     max-width: 750px;
 
     color: #cccccc;
@@ -1203,13 +1510,15 @@ nav a:hover {
 
 
     .girls-hero,
-    .disciplines-hero {
+    .disciplines-hero,
+    .contact-hero {
         padding: 70px 35px;
     }
 
 
     .girls-hero h1,
-    .disciplines-hero h1 {
+    .disciplines-hero h1,
+    .contact-hero h1 {
         font-size: 80px;
     }
 
@@ -1220,14 +1529,19 @@ nav a:hover {
     .girls-info,
     .disciplines-intro,
     .discipline-detail,
-    .disciplines-cta {
+    .disciplines-cta,
+    .contact-information,
+    .contact-form-section,
+    .contact-cta {
         padding: 100px 35px;
     }
 
 
     .girls-intro-content,
     .girls-concept-content,
-    .discipline-detail-content {
+    .discipline-detail-content,
+    .contact-information-content,
+    .contact-form-container {
         gap: 50px;
     }
 
@@ -1237,7 +1551,10 @@ nav a:hover {
     .girls-info h2,
     .disciplines-intro h2,
     .discipline-detail-text h2,
-    .disciplines-cta h2 {
+    .disciplines-cta h2,
+    .contact-information-intro h2,
+    .contact-form-intro h2,
+    .contact-cta h2 {
         font-size: 50px;
     }
 
@@ -1247,6 +1564,26 @@ nav a:hover {
     .discipline-placeholder,
     .discipline-futsal-image {
         height: 600px;
+    }
+
+
+    .contact-hero {
+        min-height: 55vh;
+    }
+
+
+    .contact-information-intro {
+        flex-basis: 42%;
+    }
+
+
+    .contact-form-intro {
+        flex-basis: 38%;
+    }
+
+
+    .contact-form {
+        padding: 35px;
     }
 
 }
@@ -1306,10 +1643,11 @@ nav a:hover {
     }
 
 
-    /* BTT GIRLS */
+    /* HERO */
 
     .girls-hero,
-    .disciplines-hero {
+    .disciplines-hero,
+    .contact-hero {
         min-height: 60vh;
 
         padding: 70px 25px;
@@ -1317,16 +1655,18 @@ nav a:hover {
 
 
     .girls-hero h1,
-    .disciplines-hero h1 {
+    .disciplines-hero h1,
+    .contact-hero h1 {
         font-size: 65px;
     }
 
 
     .girls-hero-content > p:last-child,
-    .disciplines-hero-content > p:last-child {
-        font-size: 16px;
+    .disciplines-hero-content > p:last-child,
+    .contact-hero-content > p:last-child {
+        font-size: 15px;
 
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
 
@@ -1336,10 +1676,15 @@ nav a:hover {
     .girls-info,
     .disciplines-intro,
     .discipline-detail,
-    .disciplines-cta {
+    .disciplines-cta,
+    .contact-information,
+    .contact-form-section,
+    .contact-cta {
         padding: 80px 25px;
     }
 
+
+    /* BTT GIRLS */
 
     .girls-intro-content,
     .girls-concept-content,
@@ -1366,7 +1711,10 @@ nav a:hover {
     .girls-info h2,
     .disciplines-intro h2,
     .discipline-detail-text h2,
-    .disciplines-cta h2 {
+    .disciplines-cta h2,
+    .contact-information-intro h2,
+    .contact-form-intro h2,
+    .contact-cta h2 {
         font-size: 48px;
     }
 
@@ -1376,7 +1724,10 @@ nav a:hover {
     .girls-info-content p:not(.section-subtitle),
     .discipline-detail-text p:not(.section-subtitle),
     .disciplines-intro-content > p:not(.section-subtitle),
-    .disciplines-cta-content > p:not(.section-subtitle) {
+    .disciplines-cta-content > p:not(.section-subtitle),
+    .contact-information-intro p:not(.section-subtitle),
+    .contact-form-intro p:not(.section-subtitle),
+    .contact-cta-content > p:not(.section-subtitle) {
         font-size: 17px;
     }
 
@@ -1406,6 +1757,8 @@ nav a:hover {
     }
 
 
+    /* DISCIPLINES */
+
     .discipline-detail-number {
         margin-bottom: 35px;
     }
@@ -1413,6 +1766,41 @@ nav a:hover {
 
     .discipline-placeholder span {
         font-size: 18px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-information-content,
+    .contact-form-container {
+        flex-direction: column;
+
+        gap: 60px;
+    }
+
+
+    .contact-information-intro,
+    .contact-form-intro {
+        flex: none;
+
+        width: 100%;
+    }
+
+
+    .contact-details {
+        width: 100%;
+    }
+
+
+    .contact-form {
+        width: 100%;
+
+        padding: 30px 25px;
+    }
+
+
+    .contact-hero h1 {
+        line-height: 0.9;
     }
 
 }

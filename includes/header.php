@@ -38,7 +38,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="contact.php">
                     Contact
                 </a>
             </li>
