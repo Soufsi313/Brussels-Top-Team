@@ -209,10 +209,6 @@ nav a:hover {
 }
 
 
-/* ==============================
-   CARTES DISCIPLINES
-   ============================== */
-
 .discipline-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -221,12 +217,14 @@ nav a:hover {
     gap: 25px;
 }
 
+
 .discipline-card {
     flex: 1;
     padding: 40px 30px;
     background-color: #0a0a0a;
     border-top: 3px solid #e30613;
 }
+
 
 .discipline-number {
     color: #e30613;
@@ -235,16 +233,19 @@ nav a:hover {
     margin-bottom: 50px;
 }
 
+
 .discipline-card h3 {
     font-size: 25px;
     margin-bottom: 20px;
 }
+
 
 .discipline-card p {
     color: #bbbbbb;
     line-height: 1.6;
     min-height: 80px;
 }
+
 
 .discipline-card a {
     display: inline-block;
@@ -254,13 +255,14 @@ nav a:hover {
     font-weight: bold;
 }
 
+
 .discipline-card a:hover {
     color: #e30613;
 }
 
 
 /* ==============================
-   BTT GIRLS
+   BTT GIRLS - ACCUEIL
    ============================== */
 
 .btt-girls {
@@ -268,16 +270,19 @@ nav a:hover {
     background-color: #0a0a0a;
 }
 
+
 .btt-girls-header {
     max-width: 1200px;
     margin: 0 auto 60px auto;
 }
+
 
 .btt-girls-header h2 {
     font-size: 58px;
     line-height: 1;
     margin: 0 0 30px 0;
 }
+
 
 .btt-girls-header > p:last-child {
     max-width: 750px;
@@ -287,10 +292,6 @@ nav a:hover {
 }
 
 
-/* ==============================
-   IMAGES BTT GIRLS
-   ============================== */
-
 .btt-girls-images {
     max-width: 1200px;
     margin: 0 auto;
@@ -299,12 +300,14 @@ nav a:hover {
     gap: 25px;
 }
 
+
 .btt-girls-image {
     flex: 1;
     height: 550px;
     overflow: hidden;
     position: relative;
 }
+
 
 .btt-girls-image::after {
     content: "";
@@ -313,6 +316,7 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.15);
     pointer-events: none;
 }
+
 
 .btt-girls-image img {
     width: 100%;
@@ -323,14 +327,11 @@ nav a:hover {
     transition: transform 0.5s ease;
 }
 
+
 .btt-girls-image:hover img {
     transform: scale(1.04);
 }
 
-
-/* ==============================
-   BAS DE SECTION BTT GIRLS
-   ============================== */
 
 .btt-girls-footer {
     max-width: 1200px;
@@ -341,6 +342,7 @@ nav a:hover {
     justify-content: space-between;
     gap: 30px;
 }
+
 
 .btt-girls-footer p {
     max-width: 650px;
@@ -441,10 +443,6 @@ nav a:hover {
 }
 
 
-/* ==============================
-   BADGE
-   ============================== */
-
 .pricing-badge {
     position: absolute;
 
@@ -462,10 +460,6 @@ nav a:hover {
     letter-spacing: 1px;
 }
 
-
-/* ==============================
-   INFORMATIONS PRIX
-   ============================== */
 
 .pricing-label {
     color: #e30613;
@@ -514,10 +508,6 @@ nav a:hover {
 }
 
 
-/* ==============================
-   LISTE FORMULE
-   ============================== */
-
 .pricing-card ul {
     list-style: none;
 
@@ -534,10 +524,6 @@ nav a:hover {
     line-height: 1.5;
 }
 
-
-/* ==============================
-   BOUTON FORMULE
-   ============================== */
 
 .pricing-button {
     display: block;
@@ -611,10 +597,6 @@ nav a:hover {
 }
 
 
-/* ==============================
-   INFORMATIONS ABONNEMENTS
-   ============================== */
-
 .pricing-info {
     padding: 120px 40px;
 
@@ -648,4 +630,300 @@ nav a:hover {
     line-height: 1.7;
 
     margin-bottom: 20px;
+}
+
+
+/* ==============================
+   PAGE BTT GIRLS
+   ============================== */
+
+.girls-hero {
+    min-height: 65vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 40px;
+
+    background-color: #111;
+}
+
+
+.girls-hero-content {
+    max-width: 1200px;
+
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+
+.girls-hero h1 {
+    font-size: 100px;
+
+    line-height: 0.9;
+
+    margin: 0 0 30px 0;
+
+    font-weight: 900;
+}
+
+
+.girls-hero-content > p:last-child {
+    color: #cccccc;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+/* ==============================
+   INTRO BTT GIRLS
+   ============================== */
+
+.girls-intro {
+    padding: 120px 40px;
+
+    background-color: #0a0a0a;
+}
+
+
+.girls-intro-content {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.girls-intro-text {
+    flex: 1;
+}
+
+
+.girls-intro-text h2 {
+    font-size: 58px;
+
+    line-height: 1;
+
+    margin: 0 0 35px 0;
+}
+
+
+.girls-intro-text p:not(.section-subtitle) {
+    color: #cccccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+.girls-intro-image {
+    flex: 1;
+
+    height: 600px;
+
+    overflow: hidden;
+}
+
+
+.girls-intro-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ==============================
+   CONCEPT BTT GIRLS
+   ============================== */
+
+.girls-concept {
+    padding: 120px 40px;
+
+    background-color: #111;
+}
+
+
+.girls-concept-content {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.girls-concept-image {
+    flex: 1;
+
+    height: 600px;
+
+    overflow: hidden;
+}
+
+
+.girls-concept-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.girls-concept-text {
+    flex: 1;
+}
+
+
+.girls-concept-text h2 {
+    font-size: 58px;
+
+    line-height: 1;
+
+    margin: 0 0 35px 0;
+}
+
+
+.girls-concept-text p:not(.section-subtitle) {
+    color: #cccccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==============================
+   AVANTAGES BTT GIRLS
+   ============================== */
+
+.girls-benefits {
+    padding: 120px 40px;
+
+    background-color: #0a0a0a;
+}
+
+
+.girls-benefits-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2px;
+
+    background-color: #333;
+}
+
+
+.girls-benefit {
+    padding: 50px 40px;
+
+    background-color: #111;
+}
+
+
+.girls-benefit span {
+    display: block;
+
+    color: #e30613;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 40px;
+}
+
+
+.girls-benefit h3 {
+    font-size: 30px;
+
+    margin: 0 0 20px 0;
+}
+
+
+.girls-benefit p {
+    max-width: 500px;
+
+    color: #bbbbbb;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* ==============================
+   INFORMATIONS BTT GIRLS
+   ============================== */
+
+.girls-info {
+    padding: 120px 40px;
+
+    background-color: #111;
+}
+
+
+.girls-info-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+.girls-info h2 {
+    font-size: 58px;
+
+    line-height: 1;
+
+    margin: 0 0 35px 0;
+}
+
+
+.girls-info-content p:not(.section-subtitle) {
+    max-width: 750px;
+
+    color: #cccccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+.girls-info .hero-button {
+    margin-top: 20px;
 }
