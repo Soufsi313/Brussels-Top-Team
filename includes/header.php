@@ -20,7 +20,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="disciplines.php">
                     Disciplines
                 </a>
             </li>
