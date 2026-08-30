@@ -81,58 +81,190 @@ nav a:hover {
 
 
 /* ==============================
-   HERO
+   HERO ACCUEIL
    ============================== */
 
 .hero {
     min-height: calc(100vh - 92px);
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #111;
+    justify-content: flex-start;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(17, 17, 17, 1) 0%,
+            rgba(17, 17, 17, 0.96) 35%,
+            rgba(17, 17, 17, 0.72) 65%,
+            rgba(17, 17, 17, 0.35) 100%
+        ),
+        #111;
 }
 
-.hero-content {
-    max-width: 900px;
-    padding: 40px;
+
+/*
+   Élément graphique rouge du Hero
+*/
+
+.hero::after {
+    content: "";
+    position: absolute;
+
+    right: -120px;
+    top: -150px;
+
+    width: 500px;
+    height: 500px;
+
+    border: 1px solid rgba(227, 6, 19, 0.25);
+
+    transform: rotate(45deg);
+
+    pointer-events: none;
 }
+
+
+/* ==============================
+   CONTENU HERO
+   ============================== */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 80px 60px;
+}
+
+
+/* ==============================
+   SOUS-TITRE HERO
+   ============================== */
 
 .hero-subtitle {
     color: #e30613;
-    font-size: 20px;
+
+    font-size: 18px;
+
     font-weight: bold;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
+
+    letter-spacing: 6px;
+
+    margin: 0 0 25px 0;
 }
+
+
+/* ==============================
+   TITRE HERO
+   ============================== */
 
 .hero h1 {
-    font-size: 64px;
-    line-height: 1.1;
-    margin: 0 0 25px 0;
+    max-width: 1000px;
+
+    font-size: clamp(65px, 8vw, 115px);
+
+    line-height: 0.88;
+
+    margin: 0 0 35px 0;
+
     font-weight: 900;
+
+    letter-spacing: -3px;
 }
 
+
+/* ==============================
+   DESCRIPTION HERO
+   ============================== */
+
 .hero-description {
-    font-size: 22px;
-    color: #cccccc;
-    margin-bottom: 40px;
+    font-size: 20px;
+
+    color: white;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    margin: 0 0 25px 0;
 }
+
+
+/* ==============================
+   TEXTE HERO
+   ============================== */
+
+.hero-text {
+    max-width: 650px;
+
+    color: #cccccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin: 0 0 40px 0;
+}
+
+
+/* ==============================
+   BOUTONS HERO
+   ============================== */
+
+.hero-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
 
 .hero-button {
     display: inline-block;
+
     background-color: #e30613;
+
     color: white;
+
     text-decoration: none;
-    padding: 16px 35px;
-    font-size: 18px;
+
+    padding: 16px 30px;
+
+    font-size: 16px;
+
     font-weight: bold;
+
     text-transform: uppercase;
+
+    transition: 0.3s ease;
 }
+
 
 .hero-button:hover {
     background-color: white;
+
     color: #e30613;
+}
+
+
+.hero-button-outline {
+    background-color: transparent;
+
+    border: 2px solid #e30613;
+}
+
+
+.hero-button-outline:hover {
+    background-color: #e30613;
+
+    color: white;
 }
 
 
@@ -1117,29 +1249,19 @@ nav a:hover {
    PAGE CONTACT
    ============================== */
 
-
-/* HERO */
-
 .contact-hero {
     min-height: 65vh;
-
     display: flex;
-
     align-items: center;
-
     padding: 80px 60px;
-
     background-color: #111;
-
     box-sizing: border-box;
 }
 
 
 .contact-hero-content {
     width: 100%;
-
     max-width: 1400px;
-
     margin: 0 auto;
 }
 
@@ -1151,48 +1273,37 @@ nav a:hover {
 
 .contact-hero h1 {
     font-size: 110px;
-
     line-height: 0.85;
-
     margin: 0 0 35px 0;
-
     font-weight: 900;
 }
 
 
 .contact-hero-content > p:last-child {
     color: #cccccc;
-
     font-size: 20px;
-
     font-weight: bold;
-
     letter-spacing: 4px;
-
     margin: 0;
 }
 
 
-/* INFORMATIONS */
+/* ==============================
+   INFORMATIONS CONTACT
+   ============================== */
 
 .contact-information {
     padding: 140px 60px;
-
     background-color: #0a0a0a;
-
     box-sizing: border-box;
 }
 
 
 .contact-information-content {
     max-width: 1400px;
-
     margin: 0 auto;
-
     display: flex;
-
     gap: 100px;
-
     align-items: flex-start;
 }
 
@@ -1209,97 +1320,74 @@ nav a:hover {
 
 .contact-information-intro h2 {
     font-size: 60px;
-
     line-height: 0.95;
-
     margin: 0 0 40px 0;
-
     font-weight: 900;
 }
 
 
 .contact-information-intro p:not(.section-subtitle) {
     color: #cccccc;
-
     font-size: 18px;
-
     line-height: 1.75;
-
     margin: 0 0 22px 0;
 }
 
 
 .contact-details {
     flex: 1;
-
     display: flex;
-
     flex-direction: column;
-
     gap: 2px;
-
     background-color: #333;
 }
 
 
 .contact-detail {
     padding: 40px;
-
     background-color: #111;
 }
 
 
 .contact-detail span {
     display: block;
-
     color: #e30613;
-
     font-size: 17px;
-
     font-weight: bold;
-
     margin-bottom: 25px;
 }
 
 
 .contact-detail h3 {
     font-size: 25px;
-
     margin: 0 0 15px 0;
 }
 
 
 .contact-detail p {
     color: #bbbbbb;
-
     font-size: 17px;
-
     line-height: 1.6;
-
     margin: 0;
 }
 
 
-/* FORMULAIRE */
+/* ==============================
+   FORMULAIRE CONTACT
+   ============================== */
 
 .contact-form-section {
     padding: 140px 60px;
-
     background-color: #111;
-
     box-sizing: border-box;
 }
 
 
 .contact-form-container {
     max-width: 1400px;
-
     margin: 0 auto;
-
     display: flex;
-
     gap: 100px;
-
     align-items: flex-start;
 }
 
@@ -1316,35 +1404,25 @@ nav a:hover {
 
 .contact-form-intro h2 {
     font-size: 65px;
-
     line-height: 0.9;
-
     margin: 0 0 40px 0;
-
     font-weight: 900;
 }
 
 
 .contact-form-intro p:not(.section-subtitle) {
     color: #cccccc;
-
     font-size: 18px;
-
     line-height: 1.7;
-
     margin: 0;
 }
 
 
 .contact-form {
     flex: 1;
-
     padding: 50px;
-
     background-color: #0a0a0a;
-
     border: 1px solid #333;
-
     box-sizing: border-box;
 }
 
@@ -1356,17 +1434,11 @@ nav a:hover {
 
 .form-group label {
     display: block;
-
     margin-bottom: 10px;
-
     color: white;
-
     font-size: 14px;
-
     font-weight: bold;
-
     text-transform: uppercase;
-
     letter-spacing: 2px;
 }
 
@@ -1375,21 +1447,13 @@ nav a:hover {
 .form-group select,
 .form-group textarea {
     width: 100%;
-
     box-sizing: border-box;
-
     padding: 16px 18px;
-
     background-color: #111;
-
     color: white;
-
     border: 1px solid #333;
-
     font-family: Arial, sans-serif;
-
     font-size: 16px;
-
     outline: none;
 }
 
@@ -1403,7 +1467,6 @@ nav a:hover {
 
 .form-group textarea {
     resize: vertical;
-
     min-height: 160px;
 }
 
@@ -1415,46 +1478,36 @@ nav a:hover {
 
 .contact-submit {
     width: 100%;
-
     padding: 17px 25px;
-
     background-color: #e30613;
-
     color: white;
-
     border: none;
-
     font-size: 16px;
-
     font-weight: bold;
-
     text-transform: uppercase;
-
     cursor: pointer;
 }
 
 
 .contact-submit:hover {
     background-color: white;
-
     color: #e30613;
 }
 
 
-/* CTA CONTACT */
+/* ==============================
+   CTA CONTACT
+   ============================== */
 
 .contact-cta {
     padding: 140px 60px;
-
     background-color: #0a0a0a;
-
     box-sizing: border-box;
 }
 
 
 .contact-cta-content {
     max-width: 1000px;
-
     margin: 0 auto;
 }
 
@@ -1466,24 +1519,17 @@ nav a:hover {
 
 .contact-cta h2 {
     font-size: 70px;
-
     line-height: 0.9;
-
     margin: 0 0 40px 0;
-
     font-weight: 900;
 }
 
 
 .contact-cta-content > p:not(.section-subtitle) {
     max-width: 750px;
-
     color: #cccccc;
-
     font-size: 19px;
-
     line-height: 1.75;
-
     margin: 0 0 30px 0;
 }
 
@@ -1506,6 +1552,22 @@ nav a:hover {
 
     nav a {
         font-size: 13px;
+    }
+
+
+    .hero-content {
+        padding: 70px 35px;
+    }
+
+
+    .hero h1 {
+        font-size: 80px;
+    }
+
+
+    .hero-description {
+        font-size: 17px;
+        letter-spacing: 3px;
     }
 
 
@@ -1597,36 +1659,28 @@ nav a:hover {
 
     header {
         height: auto;
-
         min-height: 80px;
-
         padding: 15px 20px;
-
         flex-wrap: wrap;
-
         gap: 15px;
     }
 
 
     .logo img {
         width: 65px;
-
         height: 65px;
     }
 
 
     nav {
         order: 3;
-
         width: 100%;
     }
 
 
     nav ul {
         justify-content: center;
-
         flex-wrap: wrap;
-
         gap: 15px;
     }
 
@@ -1638,18 +1692,63 @@ nav a:hover {
 
     .btn-inscription {
         padding: 11px 15px;
-
         font-size: 12px;
     }
 
 
     /* HERO */
 
+    .hero {
+        min-height: calc(100vh - 80px);
+    }
+
+
+    .hero-content {
+        padding: 70px 25px;
+    }
+
+
+    .hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+
+    .hero h1 {
+        font-size: 58px;
+        line-height: 0.9;
+        letter-spacing: -2px;
+    }
+
+
+    .hero-description {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .hero-button {
+        text-align: center;
+    }
+
+
+    /* BTT GIRLS / DISCIPLINES / CONTACT */
+
     .girls-hero,
     .disciplines-hero,
     .contact-hero {
         min-height: 60vh;
-
         padding: 70px 25px;
     }
 
@@ -1665,7 +1764,6 @@ nav a:hover {
     .disciplines-hero-content > p:last-child,
     .contact-hero-content > p:last-child {
         font-size: 15px;
-
         letter-spacing: 2px;
     }
 
@@ -1690,9 +1788,7 @@ nav a:hover {
     .girls-concept-content,
     .discipline-detail-content {
         flex-direction: column;
-
         gap: 50px;
-
         align-items: stretch;
     }
 
@@ -1701,7 +1797,6 @@ nav a:hover {
     .girls-concept-text,
     .discipline-detail-text {
         flex: none;
-
         width: 100%;
     }
 
@@ -1737,7 +1832,6 @@ nav a:hover {
     .discipline-placeholder,
     .discipline-futsal-image {
         width: 100%;
-
         height: 650px;
     }
 
@@ -1774,7 +1868,6 @@ nav a:hover {
     .contact-information-content,
     .contact-form-container {
         flex-direction: column;
-
         gap: 60px;
     }
 
@@ -1782,7 +1875,6 @@ nav a:hover {
     .contact-information-intro,
     .contact-form-intro {
         flex: none;
-
         width: 100%;
     }
 
@@ -1794,7 +1886,6 @@ nav a:hover {
 
     .contact-form {
         width: 100%;
-
         padding: 30px 25px;
     }
 
