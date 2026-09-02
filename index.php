@@ -136,7 +136,21 @@
             <div class="discipline-container">
 
 
+                <!-- ==============================
+                     BOXE ANGLAISE
+                     ============================== -->
+
                 <article class="discipline-card">
+
+                    <div class="discipline-image">
+
+                        <img
+                            src="images/boxe.jpg"
+                            alt="Boxe anglaise - Brussels Top Team"
+                            style="width: 100%; height: auto; display: block; border-radius: 18px;"
+                        >
+
+                    </div>
 
                     <p class="discipline-number">
                         BOXE
@@ -158,7 +172,21 @@
                 </article>
 
 
+                <!-- ==============================
+                     HYROX
+                     ============================== -->
+
                 <article class="discipline-card">
+
+                    <div class="discipline-image">
+
+                        <img
+                            src="images/hyrox.jpg"
+                            alt="HYROX - Brussels Top Team"
+                            style="width: 100%; height: auto; display: block; border-radius: 18px;"
+                        >
+
+                    </div>
 
                     <p class="discipline-number">
                         HYROX
@@ -180,7 +208,21 @@
                 </article>
 
 
+                <!-- ==============================
+                     BTT FUTSAL
+                     ============================== -->
+
                 <article class="discipline-card">
+
+                    <div class="discipline-image">
+
+                        <img
+                            src="images/futsal.jpg"
+                            alt="BTT Futsal - Brussels Top Team"
+                            style="width: 100%; height: auto; display: block; border-radius: 18px;"
+                        >
+
+                    </div>
 
                     <p class="discipline-number">
                         FUTSAL
