@@ -71,6 +71,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['email'] = $adherent['email'];
         $_SESSION['role'] = $adherent['role'];
 
+
+        /*
+        |--------------------------------------------------------------------------
+        | REDIRECTION APRÈS CONNEXION
+        |--------------------------------------------------------------------------
+        */
+
+        header('Location: connexion-reussie.php');
+        exit;
+
     } else {
 
         $erreur = 'Adresse e-mail ou mot de passe incorrect.';
@@ -80,93 +90,89 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
 
-```
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Connexion - Brussels Top Team</title>
+    <title>Connexion - Brussels Top Team</title>
 
-<link rel="stylesheet" href="css/style.css">
-```
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body>
 
-```
-<?php require_once 'includes/header.php'; ?>
+    <?php require_once 'includes/header.php'; ?>
 
 
-<main class="login-page">
+    <main class="login-page">
 
-    <div class="login-container">
+        <div class="login-container">
 
-        <div class="login-header">
+            <div class="login-header">
 
-            <p class="section-subtitle">ESPACE MEMBRE</p>
+                <p class="section-subtitle">ESPACE MEMBRE</p>
 
-            <h1>Connexion</h1>
+                <h1>Connexion</h1>
+
+            </div>
+
+
+            <?php if ($erreur !== ''): ?>
+
+                <p>
+                    <?= htmlspecialchars($erreur) ?>
+                </p>
+
+            <?php endif; ?>
+
+
+            <form method="POST" class="login-form">
+
+                <div class="form-group">
+
+                    <label for="email">Adresse e-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="mot_de_passe">Mot de passe</label>
+
+                    <input
+                        type="password"
+                        id="mot_de_passe"
+                        name="mot_de_passe"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit" class="login-submit">
+                    Se connecter
+                </button>
+
+            </form>
 
         </div>
 
-
-        <?php if ($erreur !== ''): ?>
-
-            <p>
-                <?= htmlspecialchars($erreur) ?>
-            </p>
-
-        <?php endif; ?>
+    </main>
 
 
-        <form method="POST" class="login-form">
-
-            <div class="form-group">
-
-                <label for="email">Adresse e-mail</label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                >
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="mot_de_passe">Mot de passe</label>
-
-                <input
-                    type="password"
-                    id="mot_de_passe"
-                    name="mot_de_passe"
-                    required
-                >
-
-            </div>
-
-
-            <button type="submit" class="login-submit">
-                Se connecter
-            </button>
-
-        </form>
-
-    </div>
-
-</main>
-
-
-<?php require_once 'includes/footer.php'; ?>
-```
+    <?php require_once 'includes/footer.php'; ?>
 
 </body>
 
